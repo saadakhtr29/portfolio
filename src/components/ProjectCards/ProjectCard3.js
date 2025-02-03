@@ -405,4 +405,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default projectCard3;
+export default React.memo(projectCard3);

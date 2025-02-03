@@ -42,7 +42,7 @@ const projectCard1 = () => {
 };
 
 const StyledWrapper = styled.div`
-  /*works janky on mobile :<*/
+ /*works janky on mobile :<*/
   .container {
     position: relative;
     width: 170px;
@@ -405,4 +405,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default projectCard1;
+export default React.memo(projectCard1);

@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const projectCard2 = () => {
+const ProjectCard2 = () => {
   return (
     <StyledWrapper>
       <div className="container noselect">
         <div className="canvas">
-          <div className="tracker tr-1" />
+        <div className="tracker tr-1" />
           <div className="tracker tr-2" />
           <div className="tracker tr-3" />
           <div className="tracker tr-4" />
@@ -42,7 +42,7 @@ const projectCard2 = () => {
 };
 
 const StyledWrapper = styled.div`
-  /*works janky on mobile :<*/
+ /*works janky on mobile :<*/
   .container {
     position: relative;
     width: 170px;
@@ -405,4 +405,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default projectCard2;
+export default React.memo(ProjectCard2);
