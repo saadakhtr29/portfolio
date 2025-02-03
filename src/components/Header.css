@@ -1,0 +1,143 @@
+.navbar {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Distribute items evenly */
+  padding: 20px 20px;
+  margin: 10px 50px 0px 50px;
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-family: Pilowlava, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Links container */
+.navbar .links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+/* Links styling */
+.navbar .links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Pilowlava, Helvetica, sans-serif;
+  position: relative; /* For hover underline effect */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar .links a:hover {
+  color: #ffffff;
+}
+
+.navbar .links a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navbar .links a:hover::after {
+  width: 100%;
+}
+
+/* Breakpoints for responsiveness */
+
+/* Small devices (600px and below) */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 20px;
+    margin: 5px 10px;
+  }
+
+  .navbar .logo {
+    font-size: 18px; /* Smaller font for logo */
+  }
+
+  .navbar .links {
+    gap: 10px; /* Reduce space between links */
+  }
+
+  .navbar .links a {
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+/* Medium devices (601px to 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+    margin: 10px 20px;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  .navbar .links {
+    gap: 15px;
+  }
+
+  .navbar .links a {
+    font-size: 16px;
+  }
+}
+
+/* Larger medium devices (769px to 992px) */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 40px;
+    margin: 10px 30px;
+  }
+
+  .navbar .logo {
+    font-size: 22px;
+  }
+
+  .navbar .links {
+    gap: 18px;
+  }
+
+  .navbar .links a {
+    font-size: 17px;
+  }
+}
+
+/* Large devices (993px to 1200px) */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 20px 40px;
+    margin: 10px 40px;
+  }
+
+  .navbar .logo {
+    font-size: 23px;
+  }
+
+  .navbar .links {
+    gap: 20px;
+  }
+
+  .navbar .links a {
+    font-size: 18px;
+  }
+}
