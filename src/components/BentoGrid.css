@@ -79,15 +79,15 @@
   border: 1px solid rgba(255, 255, 255, 0.354);
 }
 
-.projectHeading{
+.projectHeading {
   color: #ffffff;
   font-size: 45px;
   padding: 10px 0px;
-  margin: 5px 0px;
+  margin: 5px 0px 0px 0px;
   font-family: Pilowlava, Helvetica, sans-serif;
 }
 
-.blogHeading{
+.blogHeading {
   color: #ffffff;
   font-size: 45px;
   padding: 10px 0px 0px 0px;
@@ -95,9 +95,12 @@
   font-family: Pilowlava, Helvetica, sans-serif;
 }
 
-.stackHeading{
+.techStackHeading {
   color: #ffffff;
   font-family: Pilowlava, Helvetica, sans-serif;
+  font-size: 35px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .content-column {
@@ -111,38 +114,156 @@
 
 .cards-container {
   display: flex;
-  flex-direction: row;
-  gap: 15px; /* Space between multiple cards */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .about-container {
   display: flex;
-  align-items: flex-start; /* Aligns items at the top */
-  justify-content: space-between; /* Places heading on the left, image on the right */
+  align-items: center; /* Centers content vertically */
+  justify-content: space-between; /* Aligns text & image side by side */
   width: 100%;
-  padding: 0px 25px 25px 25px;
+  padding: 20px;
+  gap: 30px; /* Adds spacing between text and image */
 }
 
+/* Text Section */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%; /* Ensures text doesn't stretch too wide */
+}
+
+/* Heading */
 .aboutHeading {
   margin: 0;
   padding: 0;
-  flex: 1; /* Allows heading to take available space */
-  font-size: 80px;
+  font-size: 60px;
   color: #ffffff;
   font-family: Pilowlava, Helvetica, sans-serif;
 }
 
+/* Content */
+.aboutContent {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5;
+  margin: 10px 0px 0px 16px;
+}
+
+/* Image */
 .aboutGif {
   height: 230px;
   width: 230px;
-  padding: 0px 0px 50px 0px;
   mix-blend-mode: screen;
 }
 
-.socialsHeading
-{
+.socialsHeading {
   color: #ffffff;
   padding: 0px 0px 10px 0px;
   margin: 0px 0px 10px 0px;
   font-family: Pilowlava, Helvetica, sans-serif;
+}
+
+
+
+/* Media Queries */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-areas:
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4"
+      "item-5";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .about-text {
+    max-width: 100%;
+  }
+  .aboutHeading {
+    font-size: 50px;
+  }
+  .aboutGif {
+    height: 180px;
+    width: 180px;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .bento-grid {
+    padding: 10px;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutHeading {
+    font-size: 40px;
+    text-align: center;
+  }
+  .aboutGif {
+    height: 150px;
+    width: 150px;
+  }
+  .stackHeading,
+  .projectHeading,
+  .blogHeading,
+  .socialsHeading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .bento-grid {
+    gap: 8px;
+  }
+  .aboutHeading {
+    font-size: 40px;
+  }
+  .aboutContent {
+    font-size: 12px;
+  }
+  .aboutGif {
+    height: 150px;
+    width: 150px;
+  }
+  .stackHeading,
+  .projectHeading,
+  .blogHeading,
+  .socialsHeading {
+    font-size: 24px;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 }

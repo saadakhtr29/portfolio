@@ -10,21 +10,33 @@ function BentoGrid() {
   return (
     <div className="bento-grid">
       <div className="grid item-1">
-        <h2 className="stackHeading">Tech Stack</h2>
+        <div className="techStack-container">
+        <h2 className="techStackHeading">Tech Stack</h2>
+        </div>
       </div>
 
       <div className="grid item-2">
         <div className="about-container">
-          <h2 className="aboutHeading">About</h2>
+          <div className="about-text">
+            <h2 className="aboutHeading">About</h2>
+            <p className="aboutContent">
+              Lorem ipsum dolor sit amet consectetur. Pulvinar iaculis vitae
+              vulputate sed. Interdum dui massa elementum ornare eget quam nec
+              nisl. Varius arcu hendrerit at pellentesque eros et. Pellentesque
+              imperdiet lectus lobortis magna posuere aliquam. Duis dui erat
+              pellentesque risus quam sit pulvinar enim. Sit sed dignissim lorem
+              amet egestas. Interdum urna auctor eu habitant tellus nulla.
+            </p>
+          </div>
           <img className="aboutGif" src="../assets/About.gif" alt="About-img" />
         </div>
       </div>
 
       <div className="grid item-3">
-       <div className="socials-container">
-       <h2 className="socialsHeading">Connect with Me</h2>
-       <Button />
-       </div>
+        <div className="socials-container">
+          <h2 className="socialsHeading">Connect with Me</h2>
+          <Button />
+        </div>
       </div>
 
       <div className="grid item-4 content-column">

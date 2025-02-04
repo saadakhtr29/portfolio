@@ -30,9 +30,10 @@ const BlogCard = () => {
 const StyledWrapper = styled.div`
   .cards-container {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
   }
 
   .card {

@@ -11,8 +11,8 @@
   border-radius: 20px;
   display: flex;
   align-items: center; /* Align items vertically */
-  justify-content: space-between; /* Distribute items evenly */
-  padding: 20px 20px;
+  justify-content: space-between; /* Space between logo and links */
+  padding: 15px 30px;
   margin: 10px 50px 0px 50px;
 }
 
@@ -22,12 +22,13 @@
   font-size: 24px;
   color: #ffffff;
   text-decoration: none;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 /* Links container */
 .navbar .links {
   display: flex;
-  gap: 20px; /* Space between links */
+  gap: 15px; /* Space between links */
 }
 
 /* Links styling */
@@ -60,84 +61,40 @@
   width: 100%;
 }
 
-/* Breakpoints for responsiveness */
+/* Media Queries for Responsiveness */
 
-/* Small devices (600px and below) */
-@media (max-width: 600px) {
-  .navbar {
-    padding: 10px 20px;
-    margin: 5px 10px;
-  }
-
-  .navbar .logo {
-    font-size: 18px; /* Smaller font for logo */
-  }
-
-  .navbar .links {
-    gap: 10px; /* Reduce space between links */
-  }
-
-  .navbar .links a {
-    font-size: 14px; /* Smaller font size */
-  }
-}
-
-/* Medium devices (601px to 768px) */
+/* Medium screens (tablets) */
 @media (max-width: 768px) {
   .navbar {
-    padding: 15px 30px;
-    margin: 10px 20px;
+    padding: 10px 20px;
+    margin: 10px 30px;
   }
 
   .navbar .logo {
     font-size: 20px;
   }
 
-  .navbar .links {
-    gap: 15px;
-  }
-
   .navbar .links a {
-    font-size: 16px;
+    font-size: 12px; /* Slightly smaller font */
   }
 }
 
-/* Larger medium devices (769px to 992px) */
-@media (max-width: 992px) {
+/* Small screens (mobile devices) */
+@media (max-width: 480px) {
   .navbar {
-    padding: 15px 40px;
-    margin: 10px 30px;
+    padding: 8px 15px;
+    margin: 10px 15px;
   }
 
   .navbar .logo {
-    font-size: 22px;
+    font-size: 12px;
   }
 
   .navbar .links {
-    gap: 18px;
+    gap: 5px; /* Reduce space between links */
   }
 
   .navbar .links a {
-    font-size: 17px;
-  }
-}
-
-/* Large devices (993px to 1200px) */
-@media (max-width: 1200px) {
-  .navbar {
-    padding: 20px 40px;
-    margin: 10px 40px;
-  }
-
-  .navbar .logo {
-    font-size: 23px;
-  }
-
-  .navbar .links {
-    gap: 20px;
-  }
-
-  .navbar .links a {
-    font-size: 18px;
+    font-size: 8px; /* Make the links smaller */
   }
 }

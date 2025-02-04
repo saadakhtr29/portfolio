@@ -10,7 +10,8 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const moveCursor = (e) => {
-      if (animationFrameId.current) cancelAnimationFrame(animationFrameId.current);
+      if (animationFrameId.current)
+        cancelAnimationFrame(animationFrameId.current);
 
       animationFrameId.current = requestAnimationFrame(() => {
         const { x: prevX, y: prevY } = prevPosition.current;
@@ -32,7 +33,8 @@ const CustomCursor = () => {
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
-      if (animationFrameId.current) cancelAnimationFrame(animationFrameId.current);
+      if (animationFrameId.current)
+        cancelAnimationFrame(animationFrameId.current);
     };
   }, []);
 
