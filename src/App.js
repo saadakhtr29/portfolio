@@ -12,11 +12,6 @@ function App() {
     () => <Spline scene="https://prod.spline.design/q6SNYex8J-pjFI1p/scene.splinecode" />,
     []
   );
-
-  const secondSpline = useMemo(
-    () => <Spline scene="https://prod.spline.design/UGac37ivWTRIbfox/scene.splinecode" />,
-    []
-  );
   return (
     <div>
       <CustomCursor />
@@ -25,9 +20,6 @@ function App() {
       {firstSpline}
       </Suspense>
       <BentoGrid />
-      <Suspense>
-      {secondSpline}
-      </Suspense>
       <Footer />
     </div>
   );

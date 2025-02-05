@@ -14,6 +14,7 @@
   justify-content: space-between; /* Space between logo and links */
   padding: 15px 30px;
   margin: 10px 50px 0px 50px;
+
 }
 
 /* Logo styling */
@@ -83,7 +84,8 @@
 @media (max-width: 480px) {
   .navbar {
     padding: 8px 15px;
-    margin: 10px 15px;
+    margin: 10px 15px 0px 15px;
+    width: auto !important;
   }
 
   .navbar .logo {

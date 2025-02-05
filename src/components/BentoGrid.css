@@ -10,7 +10,7 @@
   max-width: 1216px;
   margin: 0 auto; /* Center the grid */
 }
-
+  
 .grid {
   background: linear-gradient(
     135deg,
@@ -89,18 +89,21 @@
 
 .blogHeading {
   color: #ffffff;
-  font-size: 45px;
+  font-size: 35px;
   padding: 10px 0px 0px 0px;
   margin: 5px 0px;
   font-family: Pilowlava, Helvetica, sans-serif;
 }
 
 .techStackHeading {
+  display: flex;
   color: #ffffff;
   font-family: Pilowlava, Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 45px;
   padding: 0px;
   margin: 0px;
+  width: 100%;
+  justify-content: center;
 }
 
 .content-column {
@@ -147,7 +150,7 @@
 /* Content */
 .aboutContent {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200;
   line-height: 1.5;
   margin: 10px 0px 0px 16px;
@@ -182,7 +185,7 @@
       "item-5";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 15px;
+    gap: 12px;
   }
   .about-container {
     flex-direction: column;
@@ -230,6 +233,7 @@
   .socialsHeading {
     font-size: 30px;
     text-align: center;
+    justify-content: center;
   }
   .cards-container {
     display: flex;
@@ -247,12 +251,16 @@
   .aboutHeading {
     font-size: 40px;
   }
+  .about-container{
+    width: 100%;
+    padding: 0px;
+  }
   .aboutContent {
-    font-size: 12px;
+    font-size: 10px;
   }
   .aboutGif {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
   .stackHeading,
   .projectHeading,
@@ -265,5 +273,48 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
+  }
+}
+
+/* iPhone 12 Pro, Samsung S20 Ultra, Pixel 7 (≤ 390px) */
+@media (max-width: 390px) {
+  .bento-grid {
+    gap: 8px;
+  }
+  .aboutHeading {
+    font-size: 32px;
+  }
+  .aboutGif {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+/* iPhone XR, Samsung Galaxy S8+ (≤ 375px) */
+@media (max-width: 375px) {
+  .bento-grid {
+    padding: 8px;
+  }
+  .aboutHeading {
+    font-size: 28px;
+  }
+  .aboutGif {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* iPhone SE & Smaller Devices (≤ 320px) */
+@media (max-width: 320px) {
+  .bento-grid {
+    gap: 6px;
+    padding: 5px;
+  }
+  .aboutHeading {
+    font-size: 24px;
+  }
+  .aboutGif {
+    height: 90px;
+    width: 90px;
   }
 }

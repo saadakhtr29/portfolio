@@ -1,0 +1,92 @@
+/* Main container */
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+}
+
+/* Skill container */
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-container:hover {
+  transform: scale(1.1);
+}
+
+/* SVG styles */
+.arc-bg {
+  fill: none;
+  stroke: #333;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.arc-progress {
+  fill: none;
+  stroke: #e63946;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 251;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1.5s linear;
+}
+
+/* Percentage Text Animation */
+.percentage-text {
+  fill: white;
+  font-size: 14px;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Skill Name */
+.skill-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/* Hover animation: Arc & Text Animate Together */
+.skill-container:hover .arc-progress {
+  stroke-dashoffset: 251; /* Reset progress on hover */
+}
+
+.skill-container:hover .percentage-text {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initial fade-in effect */
+@keyframes fadeInInitial {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-container {
+  animation: fadeInInitial 1s ease-in-out;
+}
