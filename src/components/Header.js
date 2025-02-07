@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = React.memo(() => {
-  const resumeUrl = "./assets/Saad Akhtar-resume.pdf"; // Ensure the correct file path
+  const resumeUrl = "./assets/Saad Akhtar-resume.pdf";
   const [fileReady, setFileReady] = useState(false);
 
-  // Preload the file by fetching its HEAD to check availability
   useEffect(() => {
     fetch(resumeUrl, { method: "HEAD" })
       .then((res) => {
@@ -20,7 +20,7 @@ const Header = React.memo(() => {
     if (fileReady) {
       const link = document.createElement("a");
       link.href = resumeUrl;
-      link.download = "Saad_Akhtar_Resume.pdf"; // Set desired filename
+      link.download = "Saad_Akhtar_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -33,11 +33,11 @@ const Header = React.memo(() => {
     <div className="navbar">
       <span className="logo">SAAD AKHTAR</span>
       <div className="links">
-        <a href="#resume" onClick={handleDownload}>
+        <a href="resume" onClick={handleDownload}>
           {fileReady ? "Resume" : "Loading..."}
         </a>
-        <a href="#projects"> Projects</a>
-        <a href="#services"> Services</a>
+        <Link to="/projects">Projects</Link> {/* ✅ Updated to use Link */}
+        <a href="services">Services</a>
       </div>
     </div>
   );

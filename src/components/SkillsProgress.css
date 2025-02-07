@@ -1,18 +1,20 @@
-/* Main container */
+/* SkillsProgress.css */
+
+/* Container for all skill progress bars */
 .progress-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 10px;
+  gap: 30px;
+  margin-top: 20px;
 }
 
-/* Skill container */
+/* Individual skill container */
 .skill-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  position: relative;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -20,73 +22,45 @@
   transform: scale(1.1);
 }
 
-/* SVG styles */
+/* Circular progress arc background */
 .arc-bg {
   fill: none;
-  stroke: #333;
-  stroke-width: 6;
-  stroke-linecap: round;
+  stroke: #e0e0e0;
+  stroke-width: 8;
 }
 
+/* Animated progress arc */
 .arc-progress {
   fill: none;
-  stroke: #e63946;
-  stroke-width: 6;
+  stroke: #d10000;
+  stroke-width: 8;
   stroke-linecap: round;
-  stroke-dasharray: 251;
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1.5s linear;
+  transition: stroke-dashoffset 0.5s ease-in-out;
 }
 
-/* Percentage Text Animation */
+/* Percentage text in the center */
 .percentage-text {
-  fill: white;
-  font-size: 14px;
-  font-weight: bold;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Skill Name */
-.skill-text {
-  margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
+  fill: #ffffff;
+  transition: fill 0.3s ease-in-out;
+}
+
+/* Skill name text */
+.skill-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
   text-align: center;
-  color: white;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Hover animation: Arc & Text Animate Together */
-.skill-container:hover .arc-progress {
-  stroke-dashoffset: 251; /* Reset progress on hover */
+/* Hover effects */
+.skill-container:hover  {
+  fill: d100000;
 }
 
-.skill-container:hover .percentage-text {
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Initial fade-in effect */
-@keyframes fadeInInitial {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.skill-container {
-  animation: fadeInInitial 1s ease-in-out;
+.skill-container:hover {
+  color: #d10000;
 }
