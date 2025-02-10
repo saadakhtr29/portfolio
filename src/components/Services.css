@@ -1,0 +1,86 @@
+/* General Styles */
+.pricing-container {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.pricing-title {
+  font-size: 7rem;
+  font-weight: bold;
+  opacity: 0.7;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  margin: 25px 0px;
+  z-index: 0;
+}
+
+.pricing-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+/* Pricing Cards */
+.pricing-card {
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 99;
+}
+
+.pricing-card h2 {
+  font-size: 1.2rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pricing-card ul li {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.pricing-card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255,255, 0.3);
+  transition: 0.5s;
+  transform: scale(1.1);
+  z-index: 99;
+}
+
+/* Buttons */
+.pricing-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.pricing-button:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  scale: 1.1;
+}

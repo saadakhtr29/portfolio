@@ -5,10 +5,17 @@
 }
 
 .projectPageHeading {
-  color: #fff;
-  font-family: Pilowlava, Helvetica, sans-serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family:  Helvetica, sans-serif;
+  font-size: 5rem;
+  margin: 50px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+z-index: 0;
+}
+
+.projectPageHeading:hover{
+  transition: 0.3s;
+  color: rgba(255,255,255,0.6);
 }
 
 .projects-container {
@@ -17,6 +24,7 @@
   width: auto;
   gap: 25px;
   justify-content: center;
-  padding: 50px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   margin: 10px 0px 0px 0px;
+  z-index: 1;
 }

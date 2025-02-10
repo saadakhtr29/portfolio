@@ -82,23 +82,23 @@
 .projectHeading {
   color: #ffffff;
   font-size: 45px;
-  padding: 10px 0px;
+  padding: 10px 0px 20px 0px;
   margin: 5px 0px 0px 0px;
-  font-family: Pilowlava, Helvetica, sans-serif;
+  /* font-family: Pilowlava, Helvetica, sans-serif; */
 }
 
 .blogHeading {
   color: #ffffff;
   font-size: 35px;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
   margin: 5px 0px;
-  font-family: Pilowlava, Helvetica, sans-serif;
+  /* font-family: Pilowlava, Helvetica, sans-serif; */
 }
 
 .techStackHeading {
   display: flex;
   color: #ffffff;
-  font-family: Pilowlava, Helvetica, sans-serif;
+  /* font-family: Pilowlava, Helvetica, sans-serif; */
   font-size: 45px;
   padding: 0px;
   margin: 0px;
@@ -112,7 +112,7 @@
   align-items: center; /* Center content */
   justify-content: flex-start; /* Align heading at the top */
   padding: 0px;
-  gap: 0px; /* Space between heading and cards */
+  gap: 0px; 
 }
 
 .cards-container {
@@ -128,7 +128,7 @@
   justify-content: space-between; /* Aligns text & image side by side */
   width: 100%;
   padding: 20px;
-  gap: 30px; /* Adds spacing between text and image */
+  gap: 30px;
 }
 
 /* Text Section */
@@ -144,7 +144,7 @@
   padding: 0;
   font-size: 60px;
   color: #ffffff;
-  font-family: Pilowlava, Helvetica, sans-serif;
+  /* font-family: Pilowlava, Helvetica, sans-serif; */
 }
 
 /* Content */
@@ -167,9 +167,12 @@
   color: #ffffff;
   padding: 0px 0px 10px 0px;
   margin: 0px 0px 10px 0px;
-  font-family: Pilowlava, Helvetica, sans-serif;
+  /* font-family: Pilowlava, Helvetica, sans-serif; */
 }
 
+.socials-container{
+padding: 10px 0px 10px 0px;
+}
 
 
 /* Media Queries */

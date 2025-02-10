@@ -19,7 +19,8 @@
 
 /* Logo styling */
 .navbar .logo {
-  font-family: Pilowlava, Helvetica, sans-serif;
+  font-family:  Pilowlava, Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 24px;
   color: #ffffff;
   text-decoration: none;
@@ -38,6 +39,7 @@
   font-size: 18px;
   color: #ffffff;
   font-family: Pilowlava, Helvetica, sans-serif;
+  font-weight: bold;
   position: relative; /* For hover underline effect */
   transition: color 0.3s ease;
 }

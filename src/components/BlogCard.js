@@ -41,7 +41,7 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 220px;
+    height: 230px;
     width: 160px;
     background-color: #2b223f;
     border-radius: 10px;

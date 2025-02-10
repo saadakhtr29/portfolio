@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header = React.memo(() => {
+const Header = React.memo(({ projectRef, serviceRef }) => {
   const resumeUrl = "./assets/Saad Akhtar-resume.pdf";
   const [fileReady, setFileReady] = useState(false);
 
@@ -29,6 +28,13 @@ const Header = React.memo(() => {
     }
   }, [fileReady, resumeUrl]);
 
+  // Function for smooth scrolling
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="navbar">
       <span className="logo">SAAD AKHTAR</span>
@@ -36,8 +42,8 @@ const Header = React.memo(() => {
         <a href="resume" onClick={handleDownload}>
           {fileReady ? "Resume" : "Loading..."}
         </a>
-        <Link to="/projects">Projects</Link> {/* ✅ Updated to use Link */}
-        <a href="services">Services</a>
+        <a href="projects" onClick={() => scrollToSection(projectRef)}>Projects</a>
+        <a href="services" onClick={() => scrollToSection(serviceRef)}>Services</a>
       </div>
     </div>
   );
