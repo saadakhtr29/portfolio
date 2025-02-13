@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import "./ProjectPage.css";
+// import ParticleBackground from "./ParticleBackground";
 
 export const projects = [
   {
@@ -70,14 +71,27 @@ export const projects = [
 
 const ProjectPage = () => {
   return (
-    <div className="project-page">
+    <>
       <h2 className="projectPageHeading">All Projects</h2>
       <div className="projects-container">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        {projects.map((project, index) => {
+          // Display only the first 5 projects in a single line
+          if (index < 5) {
+            return <ProjectCard key={project.id} project={project} />;
+          }
+          return null; // Explicitly return null for other elements
+        })}
       </div>
-    </div>
+      <div className="projects-container">
+        {projects.map((project, index) => {
+          // Display the rest below the first 5
+          if (index >= 5) {
+            return <ProjectCard key={project.id} project={project} />;
+          }
+          return null; // Explicitly return null for other elements
+        })}
+      </div>
+    </>
   );
 };
 

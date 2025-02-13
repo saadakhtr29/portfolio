@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
 import ProjectPage from "./components/ProjectPage";
 import ServiceSection from "./components/Services";
+import MatrixBackground from "./components/ParticleBackground"; // Import the Matrix Background
 import "./App.css";
 
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
@@ -15,11 +16,6 @@ function App() {
     []
   );
 
-  // const secondSpline = useMemo(
-  //   () => <Spline scene="https://prod.spline.design/UGac37ivWTRIbfox/scene.splinecode" />,
-  //   []
-  // );
-
   // Refs for sections
   const projectRef = useRef(null);
   const serviceRef = useRef(null);
@@ -29,13 +25,15 @@ function App() {
       <CustomCursor />
       <Header projectRef={projectRef} serviceRef={serviceRef} /> {/* Pass refs to Header */}
       <Suspense fallback={<div>Loading...</div>}>{firstSpline}</Suspense>
-
+      
       <BentoGrid />
-      {/* <Suspense fallback={<div>Loading...</div>}>{secondSpline}</Suspense> */}
 
-      {/* Project Section */}
-      <div ref={projectRef}>
-        <ProjectPage />
+      {/* Project Section with Matrix Background */}
+      <div ref={projectRef} className="project-section">
+        <MatrixBackground /> {/* Ensures background is behind content */}
+        <div className="project-content">
+          <ProjectPage />
+        </div>
       </div>
 
       {/* Service Section */}

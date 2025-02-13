@@ -9,6 +9,7 @@
   gap: 5px;
   max-width: 1216px;
   margin: 0 auto; /* Center the grid */
+  z-index: 5;
 }
   
 .grid {

@@ -1,30 +1,49 @@
 .project-page {
-  padding: 20px;
-  text-align: center;
-  height: auto;
+  position: relative;
+  min-height: 100vh;
+  background-color: black; /* Ensures visibility */
+  color: white;
+  z-index: 1; /* Ensures content is above */
 }
 
 .projectPageHeading {
-  color: rgba(255, 255, 255, 0.4);
-  font-family:  Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Keeps text above the Matrix */
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Helvetica, sans-serif;
   font-size: 5rem;
-  margin: 50px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   padding: 10px 0px 0px 0px;
-z-index: 0;
 }
 
-.projectPageHeading:hover{
+.projectPageHeading:hover {
   transition: 0.3s;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  width: auto;
-  gap: 25px;
   justify-content: center;
-  padding: 10px 0px 0px 0px;
-  margin: 10px 0px 0px 0px;
-  z-index: 1;
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2; /* Ensures projects are above the particles */
+}
+
+/* Style for the first row of 5 cards */
+.projects-container:nth-of-type(1) {
+  max-width: 100%;
+}
+
+#particleCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: #000000; /* Dark background for contrast */
+  z-index: 0; /* Behind the content */
 }

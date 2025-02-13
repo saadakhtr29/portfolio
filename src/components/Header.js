@@ -42,8 +42,8 @@ const Header = React.memo(({ projectRef, serviceRef }) => {
         <a href="resume" onClick={handleDownload}>
           {fileReady ? "Resume" : "Loading..."}
         </a>
-        <a href="projects" onClick={() => scrollToSection(projectRef)}>Projects</a>
-        <a href="services" onClick={() => scrollToSection(serviceRef)}>Services</a>
+        <a href="#projects" onClick={() => scrollToSection(projectRef)}>Projects</a>
+        <a href="#services" onClick={() => scrollToSection(serviceRef)}>Services</a>
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ const StyledWrapper = styled.div`
     box-shadow: 0 0 50px 0px, inset 5px 5px 20px 0px black;
   }
 
-  .card:hover .text {
+  .card:hover .text  {
     scale: 1.1;
     opacity: 0.9;
   }

@@ -8,3 +8,14 @@ body {
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+.project-section {
+  position: relative; /* Ensures content stacks correctly */
+  min-height: 100vh;
+}
+
+.project-content {
+  position: relative;
+  z-index: 2; /* Ensures content appears above the background */
+  padding: 20px;
+}

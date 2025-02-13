@@ -76,6 +76,8 @@
   font-size: 1rem;
   cursor: pointer;
   margin-top: 20px;
+  background-color: #0b0b0b;
+  color: white;
   transition: 0.3s;
 }
 

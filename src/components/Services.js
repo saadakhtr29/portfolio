@@ -17,7 +17,7 @@ const ServiceSection = () => {
             <li>✔ Limited currency support (USD, EUR, GBP)</li>
             <li>✔ Basic security features</li>
           </ul>
-          <button className="pricing-button">Get Started</button>
+          {/* <button className="pricing-button">Get Started</button> */}
         </div>
 
         {/* Standard Plan */}
@@ -31,7 +31,7 @@ const ServiceSection = () => {
             <li>✔ Full currency support</li>
             <li>✔ Enhanced security features</li>
           </ul>
-          <button className="pricing-button">Get Started</button>
+          {/* <button className="pricing-button">Get Started</button> */}
         </div>
 
         {/* Premium Plan */}
@@ -45,7 +45,7 @@ const ServiceSection = () => {
             <li>✔ Expanded currency support</li>
             <li>✔ Advanced security features</li>
           </ul>
-          <button className="pricing-button">Get Started</button>
+          {/* <button className="pricing-button">Get Started</button> */}
         </div>
       </div>
     </div>
