@@ -71,8 +71,8 @@ const SkillProgress = ({ percentage, skill }) => {
 const ProgressSkills = () => {
   return (
     <div className="progress-container">
-      <SkillProgress percentage={90} skill="Programming" />
-      <SkillProgress percentage={90} skill="Designing" />
+      <SkillProgress percentage={90} skill="Web Development" />
+      <SkillProgress percentage={90} skill="UI/UX Development" />
       <SkillProgress percentage={85} skill="Content Writing" />
     </div>
   );

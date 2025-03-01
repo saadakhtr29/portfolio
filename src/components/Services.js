@@ -8,8 +8,8 @@ const ServiceSection = () => {
       <div className="pricing-wrapper">
         {/* Free Plan */}
         <div className="pricing-card">
-          <h2>Free Plan</h2>
-          <p className="price">Free</p>
+          <h2>Base Plan</h2>
+          <p className="price">$5.99/hr</p>
           <ul>
             <li>✔ Send up to 2 transfers per month</li>
             <li>✔ Basic transaction history</li>
@@ -23,7 +23,7 @@ const ServiceSection = () => {
         {/* Standard Plan */}
         <div className="pricing-card">
           <h2>Premium Plan</h2>
-          <p className="price">$19.99/m</p>
+          <p className="price">$19.99/hr</p>
           <ul>
             <li>✔ Unlimited transfers with priority processing</li>
             <li>✔ Comprehensive transaction analytics</li>
@@ -37,7 +37,7 @@ const ServiceSection = () => {
         {/* Premium Plan */}
         <div className="pricing-card">
           <h2>Standard Plan</h2>
-          <p className="price">$9.99/m</p>
+          <p className="price">$9.99/hr</p>
           <ul>
             <li>✔ Unlimited transfers</li>
             <li>✔ Transaction history with export options</li>

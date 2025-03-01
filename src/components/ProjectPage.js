@@ -72,7 +72,7 @@ export const projects = [
 const ProjectPage = () => {
   return (
     <>
-      <h2 className="projectPageHeading">All Projects</h2>
+      <h2 className="projectPageHeading">Projects</h2>
       <div className="projects-container">
         {projects.map((project, index) => {
           // Display only the first 5 projects in a single line
