@@ -12,7 +12,7 @@ const ServiceSection = () => {
           <p className="price">$5.99/hr</p>
           {/* <p>For those who need stunning visuals and engaging user experiences.</p> */}
           <ul>
-            <li>✔ GCustom logos & branding.</li>
+            <li>✔ Custom logos & branding.</li>
             <li>✔ Responsive & interactive UI/UX</li>
             <li>✔ Smooth animations & transitions</li>
             <li>✔ User-friendly navigation</li>
