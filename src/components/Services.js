@@ -10,12 +10,13 @@ const ServiceSection = () => {
         <div className="pricing-card">
           <h2>Base Plan</h2>
           <p className="price">$5.99/hr</p>
+          {/* <p>For those who need stunning visuals and engaging user experiences.</p> */}
           <ul>
-            <li>✔ Send up to 2 transfers per month</li>
-            <li>✔ Basic transaction history</li>
-            <li>✔ Email support</li>
-            <li>✔ Limited currency support (USD, EUR, GBP)</li>
-            <li>✔ Basic security features</li>
+            <li>✔ GCustom logos & branding.</li>
+            <li>✔ Responsive & interactive UI/UX</li>
+            <li>✔ Smooth animations & transitions</li>
+            <li>✔ User-friendly navigation</li>
+            <li>✔ Design system & style guide</li>
           </ul>
           {/* <button className="pricing-button">Get Started</button> */}
         </div>
@@ -25,11 +26,11 @@ const ServiceSection = () => {
           <h2>Premium Plan</h2>
           <p className="price">$19.99/hr</p>
           <ul>
-            <li>✔ Unlimited transfers with priority processing</li>
-            <li>✔ Comprehensive transaction analytics</li>
-            <li>✔ 24/7 priority support</li>
-            <li>✔ Full currency support</li>
-            <li>✔ Enhanced security features</li>
+            <li>✔ Everything in Base & Standard Plan</li>
+            <li>✔ End-to-end project handling</li>
+            <li>✔ Advanced animations & interactions</li>
+            <li>✔ Custom features & functionalities</li>
+            <li>✔ Post-launch support & updates</li>
           </ul>
           {/* <button className="pricing-button">Get Started</button> */}
         </div>
@@ -39,11 +40,11 @@ const ServiceSection = () => {
           <h2>Standard Plan</h2>
           <p className="price">$9.99/hr</p>
           <ul>
-            <li>✔ Unlimited transfers</li>
-            <li>✔ Transaction history with export options</li>
-            <li>✔ Priority email support</li>
-            <li>✔ Expanded currency support</li>
-            <li>✔ Advanced security features</li>
+            <li>✔ Custom website development</li>
+            <li>✔ MERN stack expertise</li>
+            <li>✔ SEO & performance optimization</li>
+            <li>✔ API integrations</li>
+            <li>✔ Secure & scalable solutions</li>
           </ul>
           {/* <button className="pricing-button">Get Started</button> */}
         </div>
