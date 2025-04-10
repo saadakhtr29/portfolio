@@ -2,26 +2,26 @@ import React from "react";
 import "./DesignGallery.css"; // Import the CSS file
 
 const designs = [
-  {
-    title: "E-commerce App UI",
-    image: "/images/ecommerce-ui.jpg",
-    link: "#",
-  },
-  {
-    title: "Social Media Poster",
-    image: "/images/social-media-poster.jpg",
-    link: "#",
-  },
-  {
-    title: "Portfolio Website UI",
-    image: "/images/portfolio-ui.jpg",
-    link: "#",
-  },
-  {
-    title: "Branding Logo",
-    image: "/images/branding-logo.jpg",
-    link: "#",
-  },
+  // {
+  //   title: "E-commerce App UI",
+  //   image: "/images/ecommerce-ui.jpg",
+  //   link: "#",
+  // },
+  // {
+  //   title: "Social Media Poster",
+  //   image: "/images/social-media-poster.jpg",
+  //   link: "#",
+  // },
+  // {
+  //   title: "Portfolio Website UI",
+  //   image: "/images/portfolio-ui.jpg",
+  //   link: "#",
+  // },
+  // {
+  //   title: "Branding Logo",
+  //   image: "/images/branding-logo.jpg",
+  //   link: "#",
+  // },
 ];
 
 const DesignGallery = () => {
